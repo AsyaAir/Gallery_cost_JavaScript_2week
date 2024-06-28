@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AsyaAirGallery</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcat icon" href="https://cdn-icons-png.flaticon.com/128/3972/3972615.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1 class="fig">AsyaAir Bloger and Photographer</h1>
+        <p class="fig">
+            <img class="bloger" src="./assets/images/photo_bloger.png" alt="bloger">
+        </p>
+    </header>
+    <main>
+        <h2 class="fig">My photo gallery from Iceland</h2>
+        <div class="wrapper">
+            <div class="gallery">
+                <div class="gallery_pic">
+                    <img src="./assets/images/animals.jpg" alt="animals-picture"> 
+                    <img src="./assets/images/plants.jpg" alt="plants-picture">
+                    <img src="./assets/images/landscape.jpg" alt="landscape-picture">
+                    <img src="./assets/images/cities.jpg" alt="cities-picture">
+                    <img src="./assets/images/sea.jpg" alt="sea-picture">
+                    <img src="./assets/images/sky.jpg" alt="sky-picture">
+                </div>
+            </div>
+            <div class="button_wrapper">
+                <button class="gradient-button" onclick="calculateTotalPrice()">Find out the cost</button>
+            </div>
+            <div class="calculation">
+                <label class="quantity" for="quantity">Quantity of pictures</label>
+                <input class="quantity" type="number" id="quantity" name="quantity" value="1">
+                <label class="price" for="price">Price per picture</label>
+                <input class="price" type="number" id="price" name="price" value="15000000">
+                <p id="result" class="gallery_price"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="fig">TheWorldAroundAndInsideUs Inc. All rights reserved.</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
